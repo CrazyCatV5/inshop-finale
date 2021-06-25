@@ -1,0 +1,72 @@
+{% load static %}
+<div class="box">
+                <div class="header__menu">
+                    <!--                -->
+                    <div class="menu__burger">
+                        <span></span>
+                    </div>
+                    <div class="menu_left">
+                        <div class="menu__text">
+                            <a href="{% url 'base'%}">
+                                <p class="menu__text__name">INSHOP</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--                -->
+                    <nav class="menu__midl">
+                        <ul class="menu__list">
+                            <li>
+                                <a class="menu__burger_profile" href="{% url 'auth' %}">
+                                    <p>Личный</p>
+                                    <p>кабинет</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__burger_basket" href="{% url 'basket' %}">
+                                    <p>Корзина</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="theme-button-mobile" id="theme-button-mobile"><p>Поменять тему</p></div>
+                            </li>
+                            <li>
+                                <a class="menu__midl__link_mobile" href="{% url 'base' %}">
+                                    <p>Главная</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__midl__link" href="{% url 'first' %}">
+                                    <p>Новинки</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__midl__link" href="{% url 'best' %}">
+                                    <p>Лучшее</p>
+                                </a>
+                            </li>
+                             <li>
+                                <a class="menu__midl__link" href="{% url 'all' %}">
+                                    <p>Каталог</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu__midl_black"></div>
+                    <div class="menu_space"></div>
+                    <!--                -->
+                    <div class="menu_right">
+                        <div class="menu__basket">
+                            <a href="{% url 'basket' %}">
+                                <img src="{% static 'img/basket.png' %}" class="menu__image" alt="Корзина">
+                            </a>
+                        </div>
+                        <div class="menu__profile">
+                            <a href="{% url 'auth' %}">
+                                <img src="{% static 'img/profile.png' %}" class="menu__image" alt="Профиль">
+                            </a>
+                        </div>
+                        <div class="theme-button" id="theme-button"><p>Поменять тему</p></div>
+                    </div>
+                    <!--                -->
+                </div>
+            </div>

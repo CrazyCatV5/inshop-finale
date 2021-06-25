@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>InShop - Социальные сети</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+            <link rel="stylesheet" href="{% static 'css/slider.css'%}">
+
+           	<link rel="stylesheet" href="{% static 'css/lightTheme.css' %}" id="theme-link">
+        <link rel="stylesheet" type="text/css" href="/static/css/templateStyles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&display=swap" rel="stylesheet">
+<body>
+<div class="body">
+    <header class="header">
+            {% include "header.html"%}
+    </header>
+    <main>
+       <div class="box">
+                <div class="main__template">
+                    <div class="main__img">
+                            <img src='media\{{ product.image }}' class="shopImg" alt="Картинка">
+                    </div>
+                    <div class="main__title">
+                        <div class="main__name">
+                            <div class="name">
+                                <p>{{ product.name }}</p>
+                            </div>
+                            <div class="price">
+                                <p>{{ product.price }}</p>
+                            </div>
+                        </div>
+
+    			{% if request.user.is_authenticated %}
+
+    <a href="{% url 'cart_add' product.id %}" class="add_to_basket">Add To Cart</a>
+                        			{%else%}
+    <a href="{% url 'auth' %}" class="add_to_basket">Войдите</a>
+			{% endif %}
+
+                        <div class="main__description">
+                            <p>{{ product.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <footer>
+            {% include "footer.html"%}
+    </footer>
+</div>
+<script src="{% static 'jquery.js' %}"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/themeNotMain.js' %}"></script>
+</body>
+</html>

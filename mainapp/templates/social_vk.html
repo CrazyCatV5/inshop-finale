@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>InShop - Социальные сети</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+           	<link rel="stylesheet" href="{% static 'css/lightTheme.css' %}" id="theme-link">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&display=swap" rel="stylesheet">
+<body>
+<div class="body">
+    <header class="header">
+            {% include "header.html"%}
+    </header>
+    <main>
+        <div class="box">
+            <div class="users">
+                <div class="profile">
+                    <div class="profile__overview">
+                        <a href="https://vk.com/elsium" target="_blank">
+                            <img class="profile__image"
+                                 src="https://sun5-3.userapi.com/s/v1/ig2/qCYAGLm4uf6IrHDFOkiZD2q4NlNibbsZZaW2-7g7jFGwsewyvq1JGYE95bG5uVEFkPB-AdtmjQG5JnzFXH3HNSB9.jpg?size=400x0&quality=96&crop=739,0,1211,1211&ava=1"
+                                 alt="Картинка">
+                        </a>
+                    </div>
+                    <div class="profile_line"></div>
+                    <div class="profile__info">
+                        <div class="profile__name">
+                            <a href="https://vk.com/elsium" target="_blank">
+                                Дмитрий Ли
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile__info">
+                        <div class="profile__name">
+                            <a href="https://vk.com/stepan.khomullo" target="_blank">
+                                Степан Хомулло
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile_line"></div>
+                    <div class="profile__overview">
+                        <a href="https://vk.com/stepan.khomullo" target="_blank">
+                            <img class="profile__image"
+                                 src="https://sun5-4.userapi.com/s/v1/if1/y-f1hW3mmhqLXdXzrSaMHYfFOYzD5pukGLJo8PBFx384ENalwhNZ3vaR0XRNe7rjNqPUa9rW.jpg?size=400x0&quality=96&crop=82,247,1185,1185&ava=1"
+                                 alt="Картинка">
+                        </a>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile__overview">
+                        <a href="https://vk.com/zakhar.kuzmin" target="_blank">
+                            <img class="profile__image"
+                                 src="https://sun5-3.userapi.com/s/v1/if1/ePLIqEilXfiWGoM55GYFuGan8ojsATlySTMQTy5NZ6Ku8LhdBPW8og5GMoqhGWBZfvEB3nW9.jpg?size=400x0&quality=96&crop=253,497,718,866&ava=1"
+                                 alt="Картинка">
+                        </a>
+                    </div>
+                    <div class="profile_line"></div>
+                    <div class="profile__info">
+                        <div class="profile__name">
+                            <a href="https://vk.com/zakhar.kuzmin" target="_blank">
+                                Захар Кузьмин
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile__info">
+                        <div class="profile__name">
+                            <a href="https://vk.com/pavelkuzmin700" target="_blank">
+                                Павел Кузьмин
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile_line"></div>
+                    <div class="profile__overview">
+                        <a href="https://vk.com/pavelkuzmin700" target="_blank">
+                            <img class="profile__image"
+                                 src="https://sun5-3.userapi.com/s/v1/if1/KS2ZRoiuQqmf--D1mAbCtPwEyyhjktHJF_EMp1kxfmnhro_ni-rdcS4zuHYCkymksDZ5nwO0.jpg?size=400x0&quality=96&crop=0,169,1145,1538&ava=1"
+                                 alt="Картинка">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+            {% include "footer.html"%}
+    </footer>
+</div>
+<script src="{% static 'jquery.js' %}"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/themeNotMain.js' %}"></script>
+</body>
+</html>

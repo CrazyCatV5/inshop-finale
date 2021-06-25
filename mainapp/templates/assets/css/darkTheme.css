@@ -1,0 +1,159 @@
+* {color:white;}
+body {transition: all 0.5s;}
+a, a:visited{text-decoration: none; color:white}
+a:hover{text-decoration: none;}
+a:active{color:white}
+/*------------tag------------*/
+footer {
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+body {
+    background: #1c1c1c;
+}
+/*------------img------------*/
+.menu__image {
+    filter: invert(100%);
+}
+.main__news__control_prev, .main__news__control_next, .main__popular__control_prev, .main__popular__control_next {
+    filter: invert(100%);
+}
+/*------------body------------*/
+.foot_line {
+    background: white;
+}
+/*------------header------------*/
+.header {
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    background: #2d2d2d;
+}
+.menu__midl__block {
+    animation: fadeEffect 0.5s;
+    background: #2d2d2d;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+}
+.menu__midl__link:hover {
+    transition: color 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+}
+/*------------menu__basket__block------------*/
+.menu__basket_block {
+    animation: fadeEffect 0.5s;
+    background: #2d2d2d;
+    box-shadow:0 11px 10px rgba(255, 255, 255, 0.3);
+}
+.menu__basket_goods {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.total_cost {
+    color: rgba(255, 255, 255, 0.5);
+}
+.buy_button {
+    background: white;
+}
+.color_white {
+    color: #000;
+}
+.buy_button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+.basket__goods {
+    border: 1px solid white;
+}
+.basket__total_cost {
+    background: rgba(255, 255, 255, 0.2);
+}
+.basket__to_order {
+    background: white;
+    color: black;
+}
+.main__top2__look:hover {
+    transition: color 0.5s;
+    color: rgba(255, 255, 255, 0.8);
+}
+.main__line {
+    border-bottom: 1px solid white;
+}
+.main__popular__box__card {
+    background: rgba(83, 83, 83, 0.5);
+}
+.main__popular__box__card:hover {
+    transition: background 0.5s;
+    background: rgba(83, 83, 83, 1);
+}
+.main__new__text_top {
+    color: rgba(255, 255, 255, 0.6);
+}
+.main__new__text_top:hover {
+    transition: color 0.5s;
+    color: rgba(255, 255, 255, 1);
+}
+.main__new__look:hover {
+    transition: color 0.5s;
+    color: rgba(255, 255, 255, 0.8);
+}
+.main__3cat__item__text_cat {
+    color: rgba(255, 255, 255, 0.6);
+}
+.main__3cat__item__text_cat:hover {
+    transition: color 0.5s;
+    color: rgba(255, 255, 255, 1);
+}
+.main__3cat__item__text_look:hover {
+    transition: color 0.5s;
+    color: rgba(255, 255, 255, 0.8);
+}
+.main__line_bigger {
+    border-bottom: 1px solid white;
+}
+.main__news__box__card {
+    background: rgba(83, 83, 83, 0.5);
+}
+.main__news__box__card:hover {
+    transition: background 0.5s;
+    background: rgba(83, 83, 83, 1);
+}
+.profile_line {
+    background: white;
+}
+.main__buttons button {
+    border-bottom: 2px solid white;
+}
+.main__auth__container {
+    border-top: 1px solid white;
+}
+.form__block_auth button, .form__block_reg button {
+    background: white;
+    color: black;
+}
+.auth, .reg {
+    background: rgb(45, 45, 45);
+    border: 1px solid white;
+}
+.slick-dots button {
+    background: rgba(255, 255, 255, 0.3);
+}
+.slick-dots .slick-active button {
+    background: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+    .menu__midl {
+        background: rgba(45, 45, 45, 0.9);
+    }
+    .menu__midl_black {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .menu__burger:before, .menu__burger:after {
+        background: rgb(255, 255, 255);
+    }
+    .menu__burger span {
+        background: rgb(255, 255, 255);
+    }
+    .menu__midl__link_mobile:hover, .menu__burger_basket:hover, .menu__burger_profile:hover {
+        transition: color 0.3s;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>InShop - Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <link rel="stylesheet" href="{% static 'css/slider.css'%}">
+    <link rel="stylesheet" href="{% static 'css/lightTheme.css' %}" id="theme-link">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&display=swap" rel="stylesheet">
+<body>
+<div class="body">
+<header class="header">
+            {% include "header.html"%}
+        </header>    <main>
+        <div class="box__goods">
+            <div class="goods">
+                                          {% for product in products %}
+                <a href="{{ product.get_absolute_url }}" >
+                <div class="main__popular__box__card goods__item">
+                    <div class="main__popular__box__card__img">
+                        <img src="http://127.0.0.1:8000/media/{{ product.image }}" alt="">
+                    </div>
+                    <p class="main__popular__box__card_name">{{ product.name }}</p>
+                    <p class="main__popular__box__card_cost">{{ product.price }}</p>
+                </div>
+                </a>	                    {% endfor %}
+
+            </div>
+        </div>
+    </main>
+            <footer>
+            {% include "footer.html"%}
+        </footer>
+</div>
+<!--    -->
+    <script src="{% static 'jquery.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script src="{% static 'js/slick.js' %}"></script>
+    <script src="{% static 'js/mainSlider.js' %}"></script>
+    <script src="{% static 'js/themeMain.js' %}"></script>
+<!--    -->
+</body>
+</html>
